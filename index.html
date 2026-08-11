@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Team 05 • Class Babbage — COMLAB Activity 5 · Performance Task #4</title>
+<meta name="description" content="Team 05, Class Babbage's Arduino and Tinkercad tasks — COMLAB Activity 5, Performance Task #4.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anta&family=Bitcount+Prop+Single:wght@100..900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<div class="pcb-grid" aria-hidden="true"></div>
+
+<header class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <span class="brand-text">TEAM<em>05</em><span class="brand-sub"> · BABBAGE</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#top" class="nav-link">Home</a>
+      <a href="#tasks" class="nav-link">Tasks</a>
+      <a href="#members" class="nav-link">Members</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" id="navMobile">
+    <a href="#top" class="nav-link">Home</a>
+    <a href="#tasks" class="nav-link">Tasks</a>
+    <a href="#members" class="nav-link">Members</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero" id="top">
+  <div class="hero-inner">
+
+    <div class="hero-copy" data-reveal>
+      <p class="eyebrow">
+        <span class="eyebrow-dot" aria-hidden="true"></span>
+        COMLAB ACTIVITY 5 &nbsp;/&nbsp; PERFORMANCE TASK #4
+      </p>
+      <h1 class="hero-title">
+        <span class="hero-title-line">TEAM <span class="hero-title-num">05</span></span>
+        <span class="hero-title-line hero-title-class">&bull; CLASS BABBAGE</span>
+      </h1>
+      <p class="hero-subtitle">ETECH&nbsp;&middot;&nbsp;ARDUINO&nbsp;&middot;&nbsp;TINKERCAD&nbsp;&middot;&nbsp;INTERNET&nbsp;OF&nbsp;THINGS</p>
+      <p class="hero-desc">Team 05 Class Babbage's Arduino based tasks and simulations, created and tested through Tinkercad Circuits.</p>
+      <div class="hero-actions">
+        <a href="#tasks" class="btn btn-primary">
+          <span>View Tasks</span>
+          <svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a href="#members" class="btn btn-ghost">
+          <span>Members</span>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-stage" id="heroStage" data-reveal>
+      <div class="board-glow" id="boardGlow" aria-hidden="true"></div>
+      <div class="board-rig" id="boardRig">
+        <img
+          class="board-image"
+          id="boardImage"
+          src="https://commons.wikimedia.org/wiki/Special:FilePath/ArduinoUno.svg?width=900"
+          alt="Arduino Uno R3 board"
+          draggable="false"
+        >
+        <div class="board-led" id="boardLed" aria-hidden="true"></div>
+        <div class="board-sheen" aria-hidden="true"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true">
+    <span>SCROLL</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<section class="activities" id="tasks">
+  <div class="section-inner">
+    <div class="section-head" data-reveal>
+      <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>TASK LOG</p>
+      <h2 class="section-title">OUR TASKS</h2>
+      <p class="section-desc">Mao ni siya ang gibutang ni Sir Rey sa Google Classroom.</p>
+    </div>
+
+    <div class="activity-grid" id="activityGrid">
+    </div>
+  </div>
+</section>
+
+<section class="about" id="members">
+  <div class="section-inner about-inner">
+    <div class="about-copy" data-reveal>
+      <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span>KINSA GROUP MEMBERS ANI?</p>
+      <h2 class="section-title">MEMBERS</h2>
+      <p class="about-desc">
+        We are Team 05, Class Babbage — mga cute btw😎
+      </p>
+    </div>
+
+    <div class="team-panel" data-reveal>
+      <p class="team-panel-label">TEAM MEMBERS</p>
+      <ul class="member-grid" id="teamList">
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-mark" aria-hidden="true"></span>
+      <div>
+        <p class="footer-title">COMLAB ACTIVITY 5 — PERFORMANCE TASK #4</p>
+        <p class="footer-team">TEAM 05 &bull; CLASS BABBAGE</p>
+      </div>
+    </div>
+    <p class="footer-line">Arduino &middot; Tinkercad &middot; Internet of Things</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
